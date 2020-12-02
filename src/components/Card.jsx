@@ -16,7 +16,7 @@ const Card = ({title, image, imageTeacher, teacher, price}) => (
                             <img src={imageTeacher} alt="profesor" />
                         </div>
                     </div>
-                    <span class="small">{teacher}</span>
+                    <span class="small">{`Prof. ${teacher}`}</span>
                 </div>
             </div>
             <div class="s-main-center">
