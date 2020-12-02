@@ -1,5 +1,13 @@
 import React from 'react';
 
+const persona = {
+    "nombre": "Johan",
+    "apellido": "Castillo",
+    "edad": 17
+}
+
+const mayorDeEdad = edad => edad >= 18
+
 const Card = () => (
     <article class="card">
         <div class="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
@@ -16,7 +24,8 @@ const Card = () => (
                             <img src="https://ux.ed.team/img/profesor.jpg" alt="profesor" />
                         </div>
                     </div>
-                    <span class="small">Alexys Lozada</span>
+                    <span class="small">{`${persona.nombre} ${persona.apellido}`}</span>
+                    <p>{ mayorDeEdad(persona.edad) ? "Soy mayor" : "Soy menor"}</p>
                 </div>
             </div>
             <div class="s-main-center">
