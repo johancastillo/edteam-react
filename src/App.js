@@ -42,6 +42,8 @@ const App = () => (
                 teacher="Johan Castillo"
                 imageTeacher="https://edteam-media.s3.amazonaws.com/users/thumbnail/36ee2910-a392-46f3-8303-937dc3055c91.jpg"
             />
+
+            <Card />
         </div>
 
 

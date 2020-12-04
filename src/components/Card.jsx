@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Card = ({title, image, imageTeacher, teacher, price}) => (
     <article class="card">
@@ -27,5 +28,19 @@ const Card = ({title, image, imageTeacher, teacher, price}) => (
         </div>
     </article>
 );
+
+// PropTypes
+Card.propTypes = {
+    title: PropTypes.string,
+    image: PropTypes.string,
+    price: PropTypes.string
+}
+
+// Props values default
+Card.defaultProps = {
+    title: "No hay titulo",
+    image: "https://d500.epimg.net/cincodias/imagenes/2016/07/28/lifestyle/1469730076_088143_1469730170_noticia_normal.jpg",
+    price: "--"
+}
 
 export default Card;
